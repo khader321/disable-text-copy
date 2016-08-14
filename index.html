@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function () 
+{
+ $('#modify_div').bind('cut copy paste', function (e) 
+ {
+  e.preventDefault();
+ });
+
+ $("#modify_div").on("contextmenu",function(e)
+ {
+  return false;
+ });
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+
+<div id="modify_div">
+ <p>
+  This is a sample content and This is a demo of Smooth Scrolling Div Using jQuery
+  This is a sample content and This is a demo of Smooth Scrolling Div Using jQuery
+ </p>
+</div>
+
+</div>
+</body>
+</html>
